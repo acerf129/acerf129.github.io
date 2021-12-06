@@ -1,6 +1,6 @@
 const myHeading = document.querySelector('h1');
 let myButton=document.querySelector('button');
-myHeading.textContent="Good Morning Britain";
+myHeading.textContent="Good Morning ";
 
 const myImage = document.querySelector('img[alt="Corgi"]');
 myImage.onclick=function(){
