@@ -15,7 +15,7 @@ if(!localStorage.getItem('name')){
     setUserName();
 }else{
     let storeName=localStorage.getItem('name');
-    myHeading.textContent="Good Morning Britain, "+storeName;
+    myHeading.textContent="Good Morning , "+storeName;
 }
 function setUserName(){
     let name =prompt("Please enter your name.");
@@ -24,7 +24,7 @@ function setUserName(){
         return;
     }
     localStorage.setItem('name',name);
-    myHeading.textContent="Good Morning Britain, "+name;
+    myHeading.textContent="Good Morning , "+name;
 }
 myButton.onclick=function(){
     setUserName();
