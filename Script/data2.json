@@ -1,0 +1,18 @@
+
+data='[
+    "//":"page data from json",
+    {
+        "title":"Evil Bouncing Balls",
+        "body":"You can press 'w' 's' 'a' 'd' to move the evil ball to eat normal,and the background color is close to sakura",
+        "dataCreate":"2022-01-30",
+        "url_page":"123",
+        "url_link":"123"
+    },
+    {
+        "title":"Login Test",
+        "body":"Building a python project on AWS Elastic Beanstalk with dafault pages, it will be updated later",
+        "dataCreate":"2022-02-35",
+        "url_page":"123",
+        "url_link":"123"
+    }
+]';

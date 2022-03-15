@@ -1,23 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Michael's Blog">
+        <meta property="og:site_name" content="Michael's Blog">
+        <meta property="og:locale" content="en">
+    </head>
+    
     <link rel="stylesheet" href="Style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
-    <link rel="icon" href="Image/google.ico" type="image/x-icon">
-  </head>
-  <body>
-      <h1>Test Mode</h1>
-      <img src="Image/Big_Ben.jpeg" alt="My test image">
-      <img src="Image/Corgi.jpeg" alt="Corgi">
-      <p class="first-note">It's where I want to be there.</p>
-      <ul>
-        <li>New Job</li>
-        <li>Life</li>
-        <li>Mind</li>
-      </ul>
-      <button>Change User</button>     
-      <script src="Script/main.js"></script>
-  </body>
+    <script type="text/javascript" src="Script/data.json">
+    </script>
+    <script type="text/javascript" src="Script/main.js" defer></script>
+    <body>
+        <h1 class="header">
+          Michael's Blog
+        </h1>
+        <main>
+          <article class="rightcolumn row">
+          </article> 
+        <aside id="sidebar" class="sidebar leftcolumn">
+          <div class="sidebar-inner">
+            <section >
+              <div>
+                <img 
+                     src="Image/selfie.png"
+                     alt="Michael Jen"
+                     sizes="200px" />
+                <p>Michael Jen</p>
+              </div>
+              <nav>
+                  <div>
+                    <a>
+                      <span class="item-count"></span>
+                      <span class="item-name">posts</span>
+                    </a>
+                  </div>
+              </nav>  
+              <div>               
+                    <span>
+                      <a href="https://github.com/acerf129" target="_blank" title="GitHub">                 
+                        GitHub
+                      </a>
+                    </span>               
+                    <span>
+                      <a href="linkedin.com/in/michael-jen-306870134" target="_blank" title="linkedin">
+                        LinkedIn
+                      </a>
+                    </span>
+              </div>
+            </section>
+          </div>
+        </aside> 
+
+      </main>
+    </body>
+    <script>
+    </script>
 </html>
