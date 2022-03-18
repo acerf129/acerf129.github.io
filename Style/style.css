@@ -53,9 +53,13 @@ display: flex;
     margin-top:2em;
 }
 a{
+    color:none
+}
+li a{
     text-decoration: none;
     color: black;
 }
+
 a:hover{
     color: rebeccapurple;
 }
