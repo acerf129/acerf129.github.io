@@ -5,20 +5,55 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding:1em;
-    background: rgb(238,238,238);
+     background: #f7f7f7; 
 }
+
+/* nav place */
 .header{
     padding: 2px;
     font-size:2em;
     text-align: center;
-    background: #D7cec7;
 }
-  
+nav {
+    height: 50px;
+    background-color: #00AA90;
+    display: flex;
+    margin-bottom: 10px;
+    position:sticky;
+}
+nav ul {
+padding: 0;
+list-style-type: none;
+flex: 2;
+display: flex;
+}
+nav li {
+display: inline;
+text-align: center;
+flex: 1;
+}
+form{
+    align-items: center;
+}
+#search{
+    background: f7f7f7;
+    margin: 10px 50px 0 0 ;
+    height:2em;
+    border:1px solid black;
+}
+.genericon-search{
+    position: absolute;
+    margin:10px 0 0 -40px ;
+}
+/* nav place end  */
+main{
+display: flex;
+}
 .rightcolumn{
-    float: right;
-    width: 70%;
+    flex:5 ;
     box-sizing: border-box;
     padding-left: 50px;
+    margin-top:2em;
 }
 a{
     text-decoration: none;
@@ -33,12 +68,28 @@ a:focus{
 /* a:visited{
     color:lightcoral;
 } */
+
+/* card place */
 .card{ 
-    background-color:#D7cec7;
-    color:black;
     padding: 1em;
     margin-bottom: 2em; 
+    border-bottom:1px solid #a6a6a6;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+  }
+
+h2{
+    color:#00C1A4
+}
+h2:hover{
+    color: rebeccapurple;
+}
+h2:focus{
+    color:red;
+}
+
 h3{
     white-space: nowrap;
   overflow: hidden;
@@ -51,14 +102,27 @@ clear: both;
 }
 .sidebar{
     box-sizing: border-box;
+    display: block;
     width: 240px;
-    color: #555;
-    background: #D7cec7;
+    color: #555;  
     padding: 1em;
     margin-top: 2em;
-    box-shadow: initial;
     border-radius: initial;
+    flex:1;
   }
+  aside{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-bottom:1px solid #a6a6a6;
+  }
+  aside:hover{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+  }
+footer {
+    text-align: center;
+    border-top:1px solid #a6a6a6;
+    margin-top: 2em;
+}
+
 @media screen and (max-width:800px){
     .rightcolumn{
         width:100%;

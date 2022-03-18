@@ -7,21 +7,34 @@
         <meta property="og:site_name" content="Michael's Blog">
         <meta property="og:locale" content="en">
     </head>
+
     
-    <link rel="stylesheet" href="Style/style.css">
-    <script type="text/javascript" src="Script/data.json">
-    </script>
+    <script type="text/javascript" src="Script/data.json"></script>
     <script type="text/javascript" src="Script/main.js" defer></script>
+    <link rel="stylesheet" href="Style/style.css" defer>
     <body>
-        <h1 class="header">
+        <header> 
+          <h1 class="header">
           Michael's Blog
-        </h1>
+          </h1>
+        </header>   
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <form action="" method="get">
+            <input type="text" name="search" id="search" value="" placeholder="Search and hit enter...">
+            <img class="genericon-search" src="Image/search.png">
+          </form>
+        </nav>
         <main>
-          <article class="rightcolumn row">
-          </article> 
+         
         <aside id="sidebar" class="sidebar leftcolumn">
           <div class="sidebar-inner">
-            <section >
+            <section>
               <div>
                 <img 
                      src="Image/selfie.png"
@@ -29,17 +42,15 @@
                      sizes="200px" />
                 <p>Michael Jen</p>
               </div>
-              <nav>
                   <div>
                     <a>
                       <span class="item-count"></span>
                       <span class="item-name">posts</span>
                     </a>
-                  </div>
-              </nav>  
+                  </div>  
               <div>               
                     <span>
-                      <a href="https://github.com/acerf129" target="_blank" title="GitHub">                 
+                      <a href="https://github.com/acerf129" target="_blank" title="GitHub">
                         GitHub
                       </a>
                     </span>               
@@ -52,9 +63,14 @@
             </section>
           </div>
         </aside> 
-
+        <article class="rightcolumn row">
+        </article> 
       </main>
+
+      <footer>
+        <p>Copyright  ©2022 Michael Jen. All Rights Reserved. </p>  
+        <p>Power By <a href="https://www.flaticon.com/">flaticon</a></p>
+      </footer>
+
     </body>
-    <script>
-    </script>
 </html>
