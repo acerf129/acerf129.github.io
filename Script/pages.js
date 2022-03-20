@@ -38,7 +38,6 @@ if (mydata!=null){
             '</div>';
         }
     }
-    console.log(urls)
     const rightcolumn= document.querySelector('.rightcolumn');
     rightcolumn.insertAdjacentHTML( 'beforeend', mydataString );
     const item_count = document.querySelector('.item-count');
