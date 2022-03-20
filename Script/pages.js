@@ -7,7 +7,7 @@ if (mydata!=null){
     let urls = window.location.href;
     urls=urls.substring(urls.indexOf('io/')+3,urls.length-1)
     
-    //for localurl urls=urls.substring(urls.indexOf('io/'),urls.indexOf('index')-1)
+    //for localurl: urls=urls.substring(urls.indexOf('io/'),urls.indexOf('index')-1)
     urls=urls.replaceAll('-',' ').toLowerCase();
     for(var i=0;i<mydata.length;i++){
         if(mydata[i].title.toLowerCase()==urls){
@@ -38,6 +38,7 @@ if (mydata!=null){
             '</div>';
         }
     }
+    console.log(urls)
     const rightcolumn= document.querySelector('.rightcolumn');
     rightcolumn.insertAdjacentHTML( 'beforeend', mydataString );
     const item_count = document.querySelector('.item-count');
