@@ -49,15 +49,15 @@ form{
     padding-left: 50px;
     margin-top:2em;
 }
-a h2{
-    color:#00C1A4
-}
+
 li a{
     text-decoration: none;
     color: black;
     font-size: 1.3em;
 }
-
+a h2{
+    color:#00C1A4
+}
 a:hover{
     color: rebeccapurple;
 }
@@ -105,16 +105,16 @@ clear: both;
     padding: 1em;
     margin: 2em 0 0 2em;
   }
-  .contact-link{
-      display: inline-block;
+  .contact-link,.contact-link2{
+    display: inline-block;
     margin-left:0.5em;
   }
   .contact-link2{
   margin-left:3em;
 }
-  .contact-link:hover{
-      background-color:  #cccccc;
-  }
+.contact-link:hover,.contact-link2:hover{
+    background-color:  #cccccc;
+}
   aside{ 
     background-color:#f7f7f7;
     border: 1px solid transparent;
