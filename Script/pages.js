@@ -7,7 +7,7 @@ if (mydata!=null){
     let urls = window.location.href;
     urls=urls.substring(urls.indexOf('io/')+3,urls.length-1)
     
-    //for localurl: urls=urls.substring(urls.indexOf('io/'),urls.indexOf('index')-1)
+    //For Localurl: urls=urls.substring(urls.indexOf('io/')+3,urls.indexOf('index')-1)
     urls=urls.replaceAll('-',' ').toLowerCase();
     for(var i=0;i<mydata.length;i++){
         if(mydata[i].title.toLowerCase()==urls){

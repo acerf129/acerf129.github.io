@@ -10,17 +10,18 @@ body{
 /* nav place */
 .header{
     padding: 2px;
-    font-size:2em;
     text-align: center;
+    background-color: #00AA90 ;
+    margin-top: 0;
+    line-height: 2em;
 }
 nav {
     height: 50px;
-    background-color: #00AA90;
-    display: flex;
-    margin-bottom: 10px;
+    background-color: #00ccad ;
+    display: flex;   
     position: -webkit-sticky;
     position:sticky;
-    top: 20px;
+    top: 0px;
     z-index:2;
 }
 nav ul {
@@ -29,7 +30,6 @@ list-style-type: none;
 flex: 2;
 display: flex;
 align-items: center;
-margin-top: 10px;
 }
 nav li {
 display: inline;
@@ -103,10 +103,19 @@ clear: both;
     width: 240px;
     color: #555;  
     padding: 1em;
-    margin-top: 2em;
+    margin: 2em 0 0 2em;
+  }
+  .contact-link{
+      display: inline-block;
+    margin-left:0.5em;
+  }
+  .contact-link2{
+  margin-left:3em;
+}
+  .contact-link:hover{
+      background-color:  #cccccc;
   }
   aside{ 
-    margin-left: 2em;
     background-color:#f7f7f7;
     border: 1px solid transparent;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);

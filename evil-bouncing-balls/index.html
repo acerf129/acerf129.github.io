@@ -15,36 +15,36 @@
 
 
     <body>
-      
+      <nav>
+        <ul>
+          <li><a href="https://acerf129.github.io/">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <form action="" method="get">
+              <div class="input-group">
+                  <input type="text" class="form-control" name="search"  value="" placeholder="Search">
+                  <div class="input-group-btn"> 
+                    <button class="btn btn-danger" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div> 
+              </div> 
+            </form>
+          </li>
+        </ul>
+        
+      </nav>
         <header> 
           <h1 class="header">
           Michael's Blog
           </h1>
         </header>   
-        <nav>
-          <ul>
-            <li><a href="https://acerf129.github.io/">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-            <li>
-              <form action="" method="get">
-                <div class="input-group">
-                    <input type="text" class="form-control" name="search"  value="" placeholder="Search">
-                    <div class="input-group-btn"> 
-                      <button class="btn btn-danger" type="submit">
-                        <i class="glyphicon glyphicon-search"></i>
-                      </button>
-                    </div> 
-                </div> 
-              </form>
-            </li>
-          </ul>
-          
-        </nav>
+        
         <main>
           
-        <aside id="sidebar" class="sidebar leftcolumn  col-md-2 ">
+        <aside id="sidebar" class="sidebar leftcolumn  col-md-3 ">
           <div class="sidebar-inner">
             <section>
               <div>
@@ -54,21 +54,25 @@
                      sizes="200px" />
                 <p>Michael Jen</p>
               </div>
-                  <div>
+                  <div class="item-post">
                     <a>
                       <span class="item-count"></span>
                       <span class="item-name">posts</span>
                     </a>
                   </div>  
-              <div>               
-                    <span>
+                  <hr>
+              <div class="contact-items">               
+                    <span class="contact-link">          
                       <a href="https://github.com/acerf129" target="_blank" title="GitHub">
-                        GitHub
+                        <img src="../Image/github.png" alt="GitHub">
+                        
                       </a>
+                      GitHub
                     </span>               
-                    <span>
+                    <span class="contact-link2">         
                       <a href="https://www.linkedin.com/in/michael-jen-306870134/" target="_blank" title="linkedin">
-                        LinkedIn
+                        <img src="../Image/linkedin.png" alt="Linkedin">
+                          LinkedIn
                       </a>
                     </span>
               </div>
@@ -83,6 +87,7 @@
       <footer class="col-md-12">
         <p>Copyright  ©2022 Michael Jen. All Rights Reserved. </p>  
         <p>Powered By <a href="https://www.flaticon.com/" target="_blank">flaticon</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a><a href="https://www.flaticon.com/free-icons/github" title="github icons">  Github icons created by Roundicons - Flaticon</a></p>
       </footer>
 
     </body>
