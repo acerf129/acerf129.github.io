@@ -4,8 +4,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    padding:1em;
-     background: #f7f7f7; 
+    background: #f7f7f7; 
 }
 
 /* nav place */
@@ -19,10 +18,13 @@ nav {
     background-color: #00AA90;
     display: flex;
     margin-bottom: 10px;
+    position: -webkit-sticky;
     position:sticky;
+    top: 20px;
+    z-index:2;
 }
 nav ul {
-padding: 0;
+padding-top: 7px;
 list-style-type: none;
 flex: 2;
 display: flex;
@@ -35,29 +37,25 @@ text-align: center;
 flex: 1;
 }
 form{
-    align-items: center;
-    margin: 10px 10px 0 0 ;
+    margin: 0 15px 0 0 ;
 }
 .genericon-search{
     position: absolute;
     margin:10px 0 0 -40px ;
 }
 /* nav place end  */
-main{
-display: flex;
-}
 .rightcolumn{
-    flex:5 ;
     box-sizing: border-box;
     padding-left: 50px;
     margin-top:2em;
 }
-a{
-    color:none
+a h2{
+    color:#00C1A4
 }
 li a{
     text-decoration: none;
     color: black;
+    font-size: 1.3em;
 }
 
 a:hover{
@@ -74,21 +72,22 @@ a:focus{
 .card{ 
     padding: 1em;
     margin-bottom: 2em; 
-    border-bottom:1px solid #a6a6a6;
+    background-color:#f7f7f7;
+    border: 1px solid transparent;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: all 0.1s ease-out;
+    border-radius: 8px;
 }
-.card:hover{
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+.card:hover{ 
+    transform: scale(1.01);
+    box-shadow: 0 5px 20px 0 rgb(24 144 255 / 22%);
+    border: 1px solid #00C1A4;
   }
-
-h2{
-    color:#00C1A4
-}
 h2:hover{
     color: rebeccapurple;
 }
 
-h3{
+.card h3{
     white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -105,30 +104,22 @@ clear: both;
     color: #555;  
     padding: 1em;
     margin-top: 2em;
-    border-radius: initial;
-    flex:1;
   }
-  aside{
+  aside{ 
+    margin-left: 2em;
+    background-color:#f7f7f7;
+    border: 1px solid transparent;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-    border-bottom:1px solid #a6a6a6;
+    transition: all 0.1s ease-out;
+    border-radius: 8px;
   }
   aside:hover{
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+    transform: scale(1.01);
+    box-shadow: 0 5px 20px 0 rgb(24 144 255 / 22%);
+    border: 1px solid #00C1A4;
   }
 footer {
     text-align: center;
     border-top:1px solid #a6a6a6;
     margin-top: 2em;
-}
-
-@media screen and (max-width:800px){
-    .rightcolumn{
-        width:100%;
-        padding: 0;
-    }
-}
-@media screen and (max-width:800px){
-    .leftcolumn{
-        display: none;
-    }
 }
