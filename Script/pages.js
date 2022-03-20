@@ -5,7 +5,9 @@ var mydata = JSON.parse(data);
 if (mydata!=null){
     let mydataString="";
     let urls = window.location.href;
-    urls=urls.substring(urls.indexOf('io/')+3)
+    urls=urls.substring(urls.indexOf('io/')+3,urls.length-1)
+    
+    //for localurl urls=urls.substring(urls.indexOf('io/'),urls.indexOf('index')-1)
     urls=urls.replaceAll('-',' ').toLowerCase();
     for(var i=0;i<mydata.length;i++){
         if(mydata[i].title.toLowerCase()==urls){
